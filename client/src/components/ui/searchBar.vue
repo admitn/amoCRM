@@ -1,6 +1,5 @@
 <template>
     <a-row align="middle" :gutter="10">
-        <!-- Сообщение о минимальном числе символов для поиска -->
         <a-col>
             <div v-if="!isInputValid">
                 <a-tooltip title="Поиск работает от 3 символов">
@@ -8,8 +7,6 @@
                 </a-tooltip>
             </div>
         </a-col>
-
-        <!-- Search bar -->
         <a-col>
             <a-input-search
                 placeholder="Поиск сделок"
